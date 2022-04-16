@@ -4,12 +4,13 @@ def solution(nums):
     answer = 0
 
     pick_num = len(nums) // 2 # 갖고갈 수 있는 폰켓몬 개수
+    pokemon_set_num = len(set(nums)) # 중복 제거한 폰켓몬 개수
 
-    if(pick_num > len(set(nums))): # set을 통한 중복 제거
-        answer = len(set(nums))
+    if pick_num > pokemon_set_num:
+        answer = pokemon_set_num
     else:
         answer = pick_num
-
+    
     # pick_pokemon_list = list(combinations(nums, pick_num))
 
     # # print(pick_pokemon_list)
