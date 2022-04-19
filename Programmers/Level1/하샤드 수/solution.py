@@ -7,7 +7,7 @@ def solution(x):
         digits_sum += int(num) # string 형이기 때문에 int 형으로 변환
                    
     if x % digits_sum == 0: # 나누어 떨어지면 하샤드 수
-        answer = True
+        pass
     else:
         answer = False
          
