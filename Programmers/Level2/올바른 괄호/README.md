@@ -36,5 +36,7 @@
 
 pop() 함수를 이용했는데 빈리스트에서 사용할경우 IndexError가 발생했었다.
 
-다른 사람의 풀이를 보니 try except로 에러를 해결했는데, try except를 사용하지 않고 if문을 통해 리스트가 비어있는지의 여부를 먼저 확인하여 IndexError 오류를 해결했다.
+다른 사람의 풀이를 보니 try except로 에러를 해결했는데, try except를 사용하지 않고 
+
+if문을 통해 리스트가 비어있는지의 여부를 먼저 확인하여 IndexError 오류를 해결했다.
 
