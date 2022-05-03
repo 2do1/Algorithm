@@ -9,7 +9,7 @@ maze = [] # 미로
 for i in range(n):
     maze.append(list(map(int, input()))) # 미로 만들어주기
 
-def Bfs(x, y):
+def bfs(x, y):
     queue = deque() # 큐 생성
     queue.append((x, y)) # 큐에 삽입 
 
@@ -29,5 +29,5 @@ def Bfs(x, y):
 
     return maze[n-1][m-1]
 
-answer = Bfs(0, 0)
+answer = bfs(0, 0)
 print(answer)
