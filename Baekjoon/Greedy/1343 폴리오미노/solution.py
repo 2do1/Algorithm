@@ -1,4 +1,4 @@
-board = str(input()) 
+board = input() # 보드판
 
 board_split = board.split('.') # '.'을 기준으로 구분해준다.
 
@@ -26,8 +26,32 @@ for part in board_split:
 
 print(answer)
 
-# 다른사람의 풀이
 
+# # 다른 사람의 풀이1 - join() 함수 이용
+# board = input()
+
+# answer = []
+# idx = 0 # 인덱스 값
+# while idx < len(board):
+#     if board[idx:idx+4] == 'XXXX': 
+#         answer.append('AAAA')
+#         idx += 4
+#     elif board[idx:idx+2] == 'XX':
+#         answer.append('BB')
+#         idx += 2
+#     elif board[idx] == '.':
+#         answer.append('.')
+#         idx += 1
+#     else:
+#         break
+
+# answer = ''.join(answer) # join으로 합쳐준다.
+# if len(board) == len(answer):
+#     print(answer)
+# else:
+#     print(-1)
+
+# # 다른 사람의 풀이2 - replace() 함수 이용
 # board = input() 
 
 # board = board.replace("XXXX", "AAAA") 
