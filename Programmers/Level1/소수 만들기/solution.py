@@ -16,8 +16,3 @@ def solution(nums):
             answer += 1            
 
     return answer
-
-# 2440번
-n = int(input()) # 별 n개
-for i in range(n, 0, -1):
-    print('*' * i)
