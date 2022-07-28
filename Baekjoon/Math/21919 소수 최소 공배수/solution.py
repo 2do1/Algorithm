@@ -6,11 +6,11 @@ prime_num_list = [] # 소수들
 for num in num_list:
     prime_num = True # 소수인지의 여부
     for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
+        if num % i == 0: # 소수가 아닐 경우
             prime_num = False
             break
     
-    if prime_num and num not in prime_num_list: # 소수일 경우
+    if prime_num and num not in prime_num_list: # 소수일 경우, 이전에 나온 소수가 아닐 경우
         prime_num_list.append(num)
 
 
