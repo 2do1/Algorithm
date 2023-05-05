@@ -1,16 +1,18 @@
-n, m = map(int, input().split())
+import sys
+
+n, m = map(int, sys.stdin.readline().split())
 
 num_dict = dict() # 번호를 저장할 딕셔너리
 name_dict = dict() # 이름을 저장할 딕셔너리
 
 for index in range(1, n + 1):
-    pokemon_name = input()
+    pokemon_name = sys.stdin.readline().rstrip()
 
     num_dict[index] = pokemon_name
     name_dict[pokemon_name] = index
 
 for _ in range(m):
-    input_value = input() # 입력값
+    input_value = sys.stdin.readline().rstrip() # 입력값
 
     if input_value.isdigit(): # 숫자일 경우:
         print(num_dict[int(input_value)])
